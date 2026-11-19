@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Зоосайт — Карточки питомцев</title>
+    <link rel="stylesheet" href="{% static 'zoo_app/css/style.css' %}">
+</head>
+<body>
+
+    <div class="cards-container">
+        <div class="card">
+            <img class="card-img" src="{% static 'zoo_app/images/parrot.jpg' %}" alt="Бенгальский кот">
+            <p class="card-title">Попугай ара</p>
+            <button class="save-btn">Сохранить</button>
+        </div>
+
+        <div class="card">
+           <img class="card-img" src="{% static 'zoo_app/images/cat.avif' %}" alt="Бенгальский кот">
+
+            <p class="card-title">Бенгальский кот</p>
+            <button class="save-btn">Сохранить</button>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="{% static 'zoo_app/images/dog.avif' %}" alt="Щенок корги">
+
+            <p class="card-title">Щенок корги</p>
+            <button class="save-btn">Сохранить</button>
+        </div>
+
+        <div class="card">
+           <img class="card-img" src="{% static 'zoo_app/images/rabbit.jpg' %}" alt="Карликовый кролик">
+            <p class="card-title">Карликовый кролик</p>
+            <button class="save-btn">Сохранить</button>
+        </div>
+    </div>
+
+</body>
+</html>

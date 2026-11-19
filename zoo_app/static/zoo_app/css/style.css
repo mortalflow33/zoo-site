@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.card-img {
+    width: 300px;
+    border-radius: 20px;
+    display: block;
+}
+
+.card-title {
+    margin: 10px 0;
+}
+
+.save-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
