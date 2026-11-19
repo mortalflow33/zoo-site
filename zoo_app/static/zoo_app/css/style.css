@@ -4,14 +4,27 @@ body {
     margin: 0;
 }
 
+.cards-container {
+    padding: 20px;
+}
+
 .card {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     width: 300px;
+    min-height: 550px;
     padding: 20px;
+    margin: 15px;
     border: 1px solid yellow;
     border-radius: 20px;
     font-family: Helvetica, Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.7);
 }
 
 .card-img {
@@ -20,11 +33,22 @@ body {
     display: block;
 }
 
+.sale-badge {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: auto;
+}
+
 .card-title {
     margin: 10px 0;
 }
 
 .save-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     background-color: red;
     color: white;
     border: none;
@@ -32,4 +56,10 @@ body {
     font-size: 18px;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: white;
+    color: red;
 }
